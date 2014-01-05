@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="cleartype" content="on">
+        
+        <!-- favicon and mobile device icons-->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}ico/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}ico/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}ico/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}ico/apple-touch-icon-57x57-precomposed.png"> 
+        <link rel="shortcut icon" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}ico/favicon.ico" />
+        
+        <!-- windows8 - tile icon  & color -->
+        <meta name="msapplication-TileImage" content="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}ico/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+        
+        <!-- ios webapps - delete if not needed -->
+        <!--
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+        -->
+    
+        <!-- add google/web fonts if needed -->
+        
+        {% templatetag openblock %} load compress {% templatetag closeblock %}
+        
+        <!-- normalize or bootstrap and mobile-first styles -->
+        {% templatetag openblock %} compress css {% templatetag closeblock %}
+            <!--<link rel="stylesheet" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}css/vendor/normalize-2.1.3.css">-->
+            <link rel="stylesheet" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}css/vendor/bootstrap-3.0.0.min.css">
+            <link rel="stylesheet" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}css/vendor/font-awesome-4.0.3.min.css">
+            <link rel="stylesheet" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}css/mobile.less" type="text/less">
+        {% templatetag openblock %} endcompress {% templatetag closeblock %}
+        
+        {% templatetag openblock %} if not request.is_mobile and not request.is_tablet {% templatetag closeblock %}
+        <!-- desktop styles -->
+        {% templatetag openblock %} compress css {% templatetag closeblock %}
+            <link rel="stylesheet" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}css/desktop.less" type="text/less">
+        {% templatetag openblock %} endcompress {% templatetag closeblock %}
+        {% templatetag openblock %} endif {% templatetag closeblock %}
+        
+        <!-- modernizr -->        
+        <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/modernizr-2.6.2.min.js"></script>
+        
+    </head>
+    <body>
+        
+        <!-- wrap all content here -->
+        <div id="wrap">
+        
+            <!-- begin page content -->
+            <div class="container">
+                
+                <div class="page-header">
+                   <h1>Adaptive Scaffold</h1>
+                </div>
+                
+                <ul>
+                    <li><a href="/">home</a></li>
+                    <li><a href="/basic">basic</a></li>
+                    <li><a href="/hybrid">hybrid</a></li>
+                </ul>
+                
+                <!-- add your site or application content here -->
+                <div id="content">
+                    {% templatetag openblock %} block content {% templatetag closeblock %}{% templatetag openblock %} endblock {% templatetag closeblock %}
+                </div>            
+                
+            </div>
+        
+        
+        </div><!-- /wrap -->
+
+        <div id="footer">
+            <div class="container">
+                <!-- example of request.is_mobile and request.is_tablet usage in templates -->    
+                {% templatetag openblock %} if request.is_mobile {% templatetag closeblock %}
+                <p class="text-muted credit">Courtesy of <a href="">Charlon</a> and <a href="">Craig</a>. UW-IT ACA</p>
+                {% templatetag openblock %} else {% templatetag closeblock %}
+                <p class="text-muted credit">Courtesy of <a href="">Charlon Palacay</a> and <a href="">Craig Stimmel</a>. UW-IT ACA</p>
+                {% templatetag openblock %} endif {% templatetag closeblock %}
+            </div>
+        </div>
+        
+        <!-- show this in dev mode -->
+        <div id="developer">
+            <span class="label label-danger">
+            {% templatetag openblock %} if request.is_mobile {% templatetag closeblock %}Mobile{% templatetag openblock %} elif request.is_tablet {% templatetag closeblock %}Tablet{% templatetag openblock %} else {% templatetag closeblock %}Desktop{% templatetag openblock %}endif {% templatetag closeblock %}    
+            </span>
+        </div>
+        
+        <!-- jquery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+                
+        <!-- javascript -->
+        {% templatetag openblock %} compress js {% templatetag closeblock %}
+            <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/bootstrap-3.0.0.min.js"></script>
+            <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/handlebars-1.0.0.min.js"></script>
+            <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/main.js"></script>
+        {% templatetag openblock %} endcompress {% templatetag closeblock %}
+        
+        {% templatetag openblock %} block extra_js {% templatetag closeblock %}{% templatetag openblock %} endblock {% templatetag closeblock %}
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        -->
+        
+    </body>
+</html>
