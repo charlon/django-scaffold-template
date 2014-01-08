@@ -32,4 +32,9 @@ Install overview
     
     $ pip install -r requirements.txt
     
+###Add an application
+
+    $ python manage.py startapp {{app_name}}
+
+    
     
