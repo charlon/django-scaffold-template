@@ -14,7 +14,7 @@ Setup overview
 
 ###Virtual environments
 
-Make sure that virtualenv is installed. You may optionally install nodeenv as a container for running Node applications. For this project template, LessCSS is used and compiled server-side using Node.
+Make sure that virtualenv is installed. You may need to install nodeenv for running Node applications in a virtual container. For this project template, LessCSS is used and compiled server-side using Node. Install nodeenv if you don't want to install the LessCSS compiler globally.
 
 Virtualenv:
 
