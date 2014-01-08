@@ -31,7 +31,7 @@ Install overview
 
 ###Run server
 
-    $ python manage.py runserver --settings={{project_name}}.settings.local
+    $ python manage.py runserver --settings=settings.local
     
     
     
