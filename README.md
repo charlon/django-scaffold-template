@@ -30,13 +30,13 @@ Note: I typically name my virtualenv the same as my repository in Github. This a
     $ nodeenv -p
     $ npm install less
 
-**Django:**
-
-    $ pip install django
-
 ###Project scaffold
 
-**Start project**
+**Install Django:**
+
+    $ pip install django
+    
+**Start project using template**
 
     $ django-admin.py startproject --template=https://github.com/charlon/django-scaffold-template/archive/master.zip --extension=py,in,html {{project_name}}
     
