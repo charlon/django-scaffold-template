@@ -28,5 +28,11 @@ Install overview
     $ pip install -r requirements.txt
     $ python manage.py startapp {{app_name}}
 
+
+###Run server
+
+    $ python manage.py runserver --settings=project_name.settings.local
+    
+    
     
     
