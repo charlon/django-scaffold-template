@@ -20,3 +20,9 @@ Install overview
 Blah:
     
     *asfdlkjasdlkf
+
+###Install Djnago
+
+Blah:
+    
+    $ pip install django
