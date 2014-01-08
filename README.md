@@ -4,16 +4,15 @@ django-scaffold-template
 A Django project template for creating adaptive web applications. Based on previous adaptive-proj-template and adapting 2scoops of Django project structure.
 
 
-Install overview
+Setup overview
 ----------------
 
-* Setup environment
-* Install django
-* Setup Django project and dependencies
+* Virtual environments
+* Project scaffold
 * (Optional) Commit the virtualenv as a git repository
 
 
-###Setup environment
+###Virtual environments
 
 Make sure that virtualenv is installed. You may optionally install nodeenv as a container for running Node applications. For this project template, LessCSS is used and compiled server-side using Node.
 
@@ -29,18 +28,22 @@ Nodeenv:
     $ nodeenv -p
     $ npm install less
 
-###Install Django
+Django:
 
     $ pip install django
 
-###Setup Django project and dependencies
+###Project scaffold
+
+Start project
 
     $ django-admin.py startproject --template=https://github.com/charlon/django-scaffold-template/archive/master.zip --extension=py,in,html {{project_name}}
+    
+Install dependencies:
+
     $ pip install -r requirements.txt
     $ python manage.py startapp {{app_name}}
 
-
-###Run server
+Run server:
 
     $ python manage.py runserver --settings=settings.local
     
