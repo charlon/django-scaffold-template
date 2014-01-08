@@ -9,9 +9,7 @@ Install overview
 
 * Setup virtualenv
 * Install django
-* Create Django project
-* Install dependencies
-* Create an app
+* Setup Django project and dependencies
 * (Optional) Commit the virtualenv as a git repository
 
 
@@ -24,16 +22,10 @@ Install overview
 
     $ pip install django
 
-###Create your project
+###Setup Django project and dependencies
 
     $ django-admin.py startproject --template=https://github.com/charlon/django-scaffold-template/archive/master.zip --extension=py,in,html {{project_name}}
-    
-###Install dependencies
-    
     $ pip install -r requirements.txt
-    
-###Add an application
-
     $ python manage.py startapp {{app_name}}
 
     
