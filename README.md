@@ -17,9 +17,13 @@ Install overview
 
 ###Setup virtualenv
 
-    $ virtualenv env_name
+    $ virtualenv {{env_name}}
 
 ###Install Djnago
 
-    $ cd env_name
+    $ cd {{env_name}}
     $ pip install django
+
+###Create project using this template
+
+    $ django-admin.py startproject --template=https://github.com/charlon/django-scaffold-template/archive/master.zip --extension=py,in,html {{project_name}}
