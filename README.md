@@ -5,6 +5,8 @@ A Django project template for creating adaptive web applications. Based on previ
 
 
 Install overview
+----------------
+
 * Setup virtualenv
 * Install django
 * Create project using this template
@@ -13,8 +15,7 @@ Install overview
 * (Optional) Commit the virtualenv as a git repository
 
 
-Setup virtualenv
-----------------
+###Setup virtualenv
 
 Blah:
     
