@@ -18,9 +18,11 @@ Make sure that virtualenv is installed. You may need to install nodeenv for runn
 
 Virtualenv:
 
-    $ virtualenv {{env_name}}
-    $ cd {{env_name}}
+    $ virtualenv {{repo_name}}
+    $ cd {{repo_name}}
     $ source bin/activate
+
+Note: I typically name my virtualenv the same as my repository in Github. This allows for consistency if collaborating with others or just having to clone the repo on another machine.
 
 Nodeenv:
 
