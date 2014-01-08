@@ -23,6 +23,5 @@ Blah:
 
 ###Install Djnago
 
-Blah:
-    
+    $ cd virtualenv_name
     $ pip install django
