@@ -7,16 +7,27 @@ A Django project template for creating adaptive web applications. Based on previ
 Install overview
 ----------------
 
-* Setup virtualenv
+* Setup environment
 * Install django
 * Setup Django project and dependencies
 * (Optional) Commit the virtualenv as a git repository
 
 
-###Setup virtualenv
+###Setup environment
+
+Make sure that virtualenv is installed. You may optionally install nodeenv as a container for running Node applications. For this project template, LessCSS is used and compiled server-side using Node.
+
+Virtualenv:
 
     $ virtualenv {{env_name}}
     $ cd {{env_name}}
+    $ source bin/activate
+
+Nodeenv:
+
+    $ pip install nodeenv
+    $ nodeenv -p
+    $ npm install less
 
 ###Install Django
 
