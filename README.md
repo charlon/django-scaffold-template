@@ -17,11 +17,9 @@ Install overview
 
 ###Setup virtualenv
 
-Blah:
-    
-    *asfdlkjasdlkf
+    $ virtualenv env_name
 
 ###Install Djnago
 
-    $ cd virtualenv_name
+    $ cd env_name
     $ pip install django
