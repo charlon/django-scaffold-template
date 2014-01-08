@@ -14,7 +14,7 @@ Install overview
 
 
 Setup virtualenv
-================
+----------------
 
 Blah:
     
