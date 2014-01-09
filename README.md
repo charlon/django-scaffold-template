@@ -1,8 +1,7 @@
-django-scaffold-template
+{{ project_name }}
 ========================
 
-A Django project template for creating adaptive web applications. Based on previous adaptive-proj-template and adapting 2scoops of Django project structure.
-
+{{ project_name }} is a Django project created using adaptive web application concepts. The base template uses previous adaptive-proj-template and adapting 2scoops of Django project structure.
 
 Setup
 -----
