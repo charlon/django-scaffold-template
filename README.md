@@ -48,8 +48,8 @@ Note: I typically name my virtualenv the same as my repository in Github. This a
 **Run server (depending on deploy location):**
 
     $ cd [project_name]
-    $ python manage.py runserver --settings=[project_name].settings.local
-    $ python manage.py runserver --settings=[project_name].settings.production
+    $ python manage.py runserver --settings=[project_name].settings.local 0.0.0.0:8000
+    $ python manage.py runserver --settings=[project_name].settings.production 0.0.0.0:8000
 
 **Install apps**
 
