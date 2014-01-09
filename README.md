@@ -18,8 +18,8 @@ Make sure that virtualenv is installed. You may need to install nodeenv for runn
 
 **Virtualenv:**
 
-    $ virtualenv [repo_name]
-    $ cd [repo_name]
+    $ virtualenv [repo-name]
+    $ cd [repo-name]
     $ source bin/activate
 
 Note: I typically name my virtualenv the same as my repository in Github. This allows for consistency if collaborating with others or just having to clone the repo on another machine.
@@ -31,6 +31,9 @@ Note: I typically name my virtualenv the same as my repository in Github. This a
     $ npm install less
 
 ###Project scaffold
+
+Concepts: Adaptive design, mobile-first, RESS, responsive web design - whatever you want to call it!
+Includes: Bootstrap3/Normalize, Django Compressor, MobileESP, LessCSS
 
 **Install Django:**
 
@@ -55,6 +58,16 @@ Note: I typically name my virtualenv the same as my repository in Github. This a
     $ python manage.py startapp [app_name]
     
 ###Version control
+
+First, create an empty Github remote repository.
+
+**Initialize local repository**
+
+    $ cd [repo-name]
+    $ git init
+    $ git remote add origin https://github.com/[gitusername]/[git-repo-name].git
+
+
 
 
     
