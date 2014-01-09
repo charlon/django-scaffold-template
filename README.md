@@ -1,7 +1,7 @@
 {{ project_name }}
 ========================
 
-{{ project_name }} is a Django project created using adaptive web application concepts. The base template uses previous adaptive-proj-template and adapting 2scoops of Django project structure.
+Welcome to {{ project_name }}... cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.
 
 Install
 -------
