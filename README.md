@@ -18,8 +18,8 @@ Make sure that virtualenv is installed. You may need to install nodeenv for runn
 
 **Virtualenv:**
 
-    $ virtualenv {{repo_name}}
-    $ cd {{repo_name}}
+    $ virtualenv [repo_name]
+    $ cd [repo_name]
     $ source bin/activate
 
 Note: I typically name my virtualenv the same as my repository in Github. This allows for consistency if collaborating with others or just having to clone the repo on another machine.
@@ -38,22 +38,22 @@ Note: I typically name my virtualenv the same as my repository in Github. This a
     
 **Start project using template**
 
-    $ django-admin.py startproject --template=https://github.com/charlon/django-scaffold-template/archive/master.zip --extension=py,in,html {{project_name}}
+    $ django-admin.py startproject --template=https://github.com/charlon/django-scaffold-template/archive/master.zip --extension=py,in,html [project_name]
     
 **Install dependencies:**
 
-    $ cd {{project_name}}
+    $ cd [project_name]
     $ pip install -r requirements.txt
 
 **Run server (depending on deploy location):**
 
-    $ cd {{project_name}}
-    $ python manage.py runserver --settings=settings.local
-    $ python manage.py runserver --settings=settings.production
+    $ cd [project_name]
+    $ python manage.py runserver --settings=[project_name].settings.local
+    $ python manage.py runserver --settings=[project_name].settings.production
 
 **Install apps**
 
-    $ python manage.py startapp {{app_name}}
+    $ python manage.py startapp [app_name]
     
     
     
