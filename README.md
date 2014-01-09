@@ -9,7 +9,7 @@ Setup overview
 
 * Virtual environments
 * Project scaffold
-* (Optional) Commit the virtualenv as a git repository
+* Version control
 
 
 ###Virtual environments
@@ -45,15 +45,16 @@ Note: I typically name my virtualenv the same as my repository in Github. This a
     $ cd [project_name]
     $ pip install -r requirements.txt
 
-**Run server (depending on deploy location):**
+**Run server (using local settings):**
 
     $ cd [project_name]
     $ python manage.py runserver --settings=[project_name].settings.local 0.0.0.0:8000
-    $ python manage.py runserver --settings=[project_name].settings.production 0.0.0.0:8000
 
 **Install apps**
 
     $ python manage.py startapp [app_name]
     
-    
+###Version control
+
+
     
