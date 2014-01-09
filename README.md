@@ -53,6 +53,8 @@ Includes: Bootstrap3/Normalize, Django Compressor, MobileESP, LessCSS
     $ cd [project_name]
     $ python manage.py runserver --settings=[project_name].settings.local 0.0.0.0:8000
 
+At this point, you may want to start version controlling your project (see Version Control).
+
 **Install apps**
 
     $ python manage.py startapp [app_name]
@@ -66,6 +68,14 @@ First, create an empty Github remote repository.
     $ cd [repo-name]
     $ git init
     $ git remote add origin https://github.com/[gitusername]/[git-repo-name].git
+    $ git pull origin master
+    
+**Add project to Github**
+
+    $ git add [project_name]
+    $ git commit -m "Initial Django project commit."
+    $ git push -u origin master
+
 
 
 
