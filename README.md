@@ -44,14 +44,16 @@ Note: I typically name my virtualenv the same as my repository in Github. This a
 
     $ cd {{project_name}}
     $ pip install -r requirements.txt
-    $ python manage.py startapp {{app_name}}
 
 **Run server (depending on deploy location):**
 
+    $ cd {{project_name}}
     $ python manage.py runserver --settings=settings.local
     $ python manage.py runserver --settings=settings.production
-    
-    
+
+**Install apps**
+
+    $ python manage.py startapp {{app_name}}
     
     
     
