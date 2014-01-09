@@ -1,6 +1,6 @@
 #production settings
 
-from settings.base import *
+from {{project_name}}settings.base import *
 
 # django compressor and less-c compiler
 
