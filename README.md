@@ -42,6 +42,7 @@ Note: I typically name my virtualenv the same as my repository in Github. This a
     
 **Install dependencies:**
 
+    $ cd {{project_name}}
     $ pip install -r requirements.txt
     $ python manage.py startapp {{app_name}}
 
