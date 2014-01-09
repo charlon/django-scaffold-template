@@ -3,6 +3,9 @@
 
 {{ project_name }} is a Django project created using adaptive web application concepts. The base template uses previous adaptive-proj-template and adapting 2scoops of Django project structure.
 
+Install
+-------
+
 **Clone {{ project_name }}**
 
     $ git clone [github-repository-url]
