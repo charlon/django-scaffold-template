@@ -4,8 +4,8 @@ django-scaffold-template
 A Django project template for creating adaptive web applications. Based on previous adaptive-proj-template and adapting 2scoops of Django project structure.
 
 
-Setup overview
-----------------
+Setup
+-----
 
 * Virtual environments
 * Project scaffold
@@ -77,7 +77,29 @@ First, create an empty Github remote repository.
     $ git push -u origin master
 
 
+Collaboration
+-------------
 
+Collaborating on a project is easy as cloning the repository you just created and turning it into a virtualenv.
 
+**Clone repository**
 
+    $ git clone [github-repo-url]
+    
+**Virtualenv:**
+
+    $ virtualenv [repo-name]
+    $ cd [repo-name]
+    $ source bin/activate
+    
+**Nodeenv:**
+
+    $ pip install nodeenv
+    $ nodeenv -p
+    $ npm install less
+    
+**Project**
+
+    $ cd [project_name]
+    $ pip install -r requirements.txt
     
