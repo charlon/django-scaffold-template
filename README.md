@@ -14,13 +14,15 @@ Installation
 
 **Virtualenv:**
 
-Turn the cloned repository into a virtual environment
+Turn the cloned repository into a virtualenv
 
     $ virtualenv [repo-name]
     $ cd [repo-name]
     $ source bin/activate
 
 **Nodeenv:**
+
+Create a nodeenv for any Node packages. This project uses LessCSS for preprocessing CSS files.
 
     $ pip install nodeenv
     $ nodeenv -p
