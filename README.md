@@ -8,13 +8,13 @@ Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultric
 Installation
 ------------
 
-**Repository (Github)**
+**Github**
 
     $ git clone [github-repository-url]
 
-Turn the cloned repository into a virtual environment
-
 **Virtualenv:**
+
+Turn the cloned repository into a virtual environment
 
     $ virtualenv [repo-name]
     $ cd [repo-name]
