@@ -28,7 +28,7 @@ Create a nodeenv for any Node packages. This project uses LessCSS for preprocess
     $ nodeenv -p
     $ npm install less
 
-**Install project dependencies:**
+**Dependencies:**
 
     $ cd [project_name]
     $ pip install -r requirements.txt
