@@ -8,7 +8,7 @@ Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultric
 Installation
 ------------
 
-**Clone {{ project_name }}**
+**Repository (Github)**
 
     $ git clone [github-repository-url]
 
