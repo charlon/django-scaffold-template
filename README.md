@@ -31,6 +31,10 @@ Turn the cloned repository into a virtual environment
     $ cd [project_name]
     $ pip install -r requirements.txt
 
+
+Server
+------
+
 **Run server (using local settings):**
 
     $ cd [project_name]
