@@ -14,7 +14,7 @@ Installation
 
 **Virtualenv:**
 
-Turn the cloned repository into a virtualenv
+Turn the cloned repository into a virtualenv.
 
     $ virtualenv [repo-name]
     $ cd [repo-name]
