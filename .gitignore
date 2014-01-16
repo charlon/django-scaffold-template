@@ -1,9 +1,0 @@
-*.log
-*.pot
-*.pyc
-CACHE
-bin
-lib
-include
-src
-node_modules
