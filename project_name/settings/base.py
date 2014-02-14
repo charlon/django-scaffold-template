@@ -93,6 +93,11 @@ STATICFILES_FINDERS = (
     'compressor.finders.CompressorFinder',
 )
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+
 # django compressor and less-c compiler
 
 COMPRESS_PRECOMPILERS = (('text/less', 'lessc {infile} {outfile}'),)
@@ -118,4 +123,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
+)
+
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates')
 )
