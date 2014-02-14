@@ -10,6 +10,11 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta http-equiv="cleartype" content="on">
         
+        <!-- EXAMPLE FOR CONVERTING TO NEW STATIC TEMPLATE
+        <link rel="shortcut icon" href="{% static "ico/favicon.ico" %}" />        
+        <link rel="stylesheet" href="{% templatetag openblock %} static "xxxxxx" {% templatetag closeblock %}" />
+        -->
+        
         <!-- favicon and mobile device icons-->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}ico/apple-touch-icon-144x144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}ico/apple-touch-icon-114x114-precomposed.png">
@@ -105,6 +110,8 @@
         <!-- javascript -->
         {% templatetag openblock %} compress js {% templatetag closeblock %}
             <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/bootstrap-3.1.1.min.js"></script>
+            <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/underscore-1.6.0.min.js"></script>
+            <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/backbone-1.1.1.min.js"></script>
             <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/handlebars-1.0.0.min.js"></script>
             <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/holder-2.3.1.min.js"></script>
             <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/main.js"></script>
