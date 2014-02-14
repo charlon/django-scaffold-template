@@ -36,7 +36,7 @@
         <!-- normalize or bootstrap and mobile-first styles -->
         {% templatetag openblock %} compress css {% templatetag closeblock %}
             <!--<link rel="stylesheet" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}css/vendor/normalize-2.1.3.css">-->
-            <link rel="stylesheet" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}css/vendor/bootstrap-3.0.0.min.css">
+            <link rel="stylesheet" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}css/vendor/bootstrap-3.1.1.min.css">
             <link rel="stylesheet" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}css/vendor/font-awesome-4.0.3.min.css">
             <link rel="stylesheet" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}css/mobile.less" type="text/less">
         {% templatetag openblock %} endcompress {% templatetag closeblock %}
@@ -104,8 +104,9 @@
                 
         <!-- javascript -->
         {% templatetag openblock %} compress js {% templatetag closeblock %}
-            <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/bootstrap-3.0.0.min.js"></script>
+            <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/bootstrap-3.1.1.min.js"></script>
             <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/handlebars-1.0.0.min.js"></script>
+            <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/vendor/holder-2.3.1.min.js"></script>
             <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/main.js"></script>
         {% templatetag openblock %} endcompress {% templatetag closeblock %}
         
