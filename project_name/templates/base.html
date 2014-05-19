@@ -40,7 +40,7 @@
             <link rel="stylesheet" href="{% templatetag openblock %} static "vendor/css/font-awesome-4.0.3.min.css" {% templatetag closeblock %}">
             <link rel="stylesheet" href="{% templatetag openblock %} static "project/css/mobile.less" {% templatetag closeblock %}" type="text/less">
         {% templatetag openblock %} endcompress {% templatetag closeblock %}
-        
+                
         {% templatetag openblock %} if not request.is_mobile and not request.is_tablet {% templatetag closeblock %}
         <!-- desktop styles -->
         {% templatetag openblock %} compress css {% templatetag closeblock %}
