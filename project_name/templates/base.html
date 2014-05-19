@@ -11,14 +11,14 @@
         <meta http-equiv="cleartype" content="on">
         
         <!-- favicon and mobile device icons-->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% templatetag openblock %} static "ico/apple-touch-icon-144x144-precomposed.png" {% templatetag closeblock %}">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% templatetag openblock %} static "ico/apple-touch-icon-114x114-precomposed.png" {% templatetag closeblock %}">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% templatetag openblock %} static "ico/apple-touch-icon-72x72-precomposed.png" {% templatetag closeblock %}">
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% templatetag openblock %} static "ico/apple-touch-icon-57x57-precomposed.png" {% templatetag closeblock %}"> 
-        <link rel="shortcut icon" href="{% templatetag openblock %} static "ico/favicon.ico" {% templatetag closeblock %}">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% templatetag openblock %} static "vendor/ico/apple-touch-icon-144x144-precomposed.png" {% templatetag closeblock %}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% templatetag openblock %} static "vendor/ico/apple-touch-icon-114x114-precomposed.png" {% templatetag closeblock %}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% templatetag openblock %} static "vendor/ico/apple-touch-icon-72x72-precomposed.png" {% templatetag closeblock %}">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% templatetag openblock %} static "vendor/ico/apple-touch-icon-57x57-precomposed.png" {% templatetag closeblock %}"> 
+        <link rel="shortcut icon" href="{% templatetag openblock %} static "vendor/ico/favicon.ico" {% templatetag closeblock %}">
         
         <!-- windows8 - tile icon  & color -->
-        <meta name="msapplication-TileImage" content="{% templatetag openblock %} static "ico/apple-touch-icon-144x144-precomposed.png" {% templatetag closeblock %}">
+        <meta name="msapplication-TileImage" content="{% templatetag openblock %} static "vendor/ico/apple-touch-icon-144x144-precomposed.png" {% templatetag closeblock %}">
         <meta name="msapplication-TileColor" content="#222222">
         
         <!-- ios webapps - delete if not needed -->
@@ -35,21 +35,26 @@
         
         <!-- normalize or bootstrap and mobile-first styles -->
         {% templatetag openblock %} compress css {% templatetag closeblock %}
-            <link rel="stylesheet" href="{% templatetag openblock %} static "css/vendor/normalize-2.1.3.css" {% templatetag closeblock %}">
-            <link rel="stylesheet" href="{% templatetag openblock %} static "css/vendor/bootstrap-3.1.1.min.css" {% templatetag closeblock %}">
-            <link rel="stylesheet" href="{% templatetag openblock %} static "css/vendor/font-awesome-4.0.3.min.css" {% templatetag closeblock %}">
-            <link rel="stylesheet" href="{% templatetag openblock %} static "css/mobile.less" {% templatetag closeblock %}" type="text/less">
+            <link rel="stylesheet" href="{% templatetag openblock %} static "vendor/css/normalize-2.1.3.css" {% templatetag closeblock %}">
+            <link rel="stylesheet" href="{% templatetag openblock %} static "vendor/css/bootstrap-3.1.1.min.css" {% templatetag closeblock %}">
+            <link rel="stylesheet" href="{% templatetag openblock %} static "vendor/css/font-awesome-4.0.3.min.css" {% templatetag closeblock %}">
+            <link rel="stylesheet" href="{% templatetag openblock %} static "project/css/mobile.less" {% templatetag closeblock %}" type="text/less">
         {% templatetag openblock %} endcompress {% templatetag closeblock %}
         
         {% templatetag openblock %} if not request.is_mobile and not request.is_tablet {% templatetag closeblock %}
         <!-- desktop styles -->
         {% templatetag openblock %} compress css {% templatetag closeblock %}
-            <link rel="stylesheet" href="{% templatetag openblock %} static "css/desktop.less" {% templatetag closeblock %}" type="text/less">
+            <link rel="stylesheet" href="{% templatetag openblock %} static "project/css/desktop.less" {% templatetag closeblock %}" type="text/less">
         {% templatetag openblock %} endcompress {% templatetag closeblock %}
         {% templatetag openblock %} endif {% templatetag closeblock %}
         
+        {% templatetag openblock %} if debug {% templatetag closeblock %}
+        <!-- lessjs (debug only) -->                
+        <script src="{% templatetag openblock %} static "vendor/js/less-1.7.0.min.js" {% templatetag closeblock %}"></script>
+        {% templatetag openblock %} endif {% templatetag closeblock %}
+        
         <!-- modernizr -->                
-        <script src="{% templatetag openblock %} static "js/vendor/modernizr-2.6.2.min.js" {% templatetag closeblock %}"></script>
+        <script src="{% templatetag openblock %} static "vendor/js/modernizr-2.6.2.min.js" {% templatetag closeblock %}"></script>
         
     </head>
     <body>
@@ -91,26 +96,25 @@
             </div>
         </div>
         
-        <!-- show this in dev mode -->
+        {% templatetag openblock %} if debug {% templatetag closeblock %}
+        <!-- device bar (debug only) -->
         <div id="developer">
             <span class="label label-danger">
             {% templatetag openblock %} if request.is_mobile {% templatetag closeblock %}Mobile{% templatetag openblock %} elif request.is_tablet {% templatetag closeblock %}Tablet{% templatetag openblock %} else {% templatetag closeblock %}Desktop{% templatetag openblock %}endif {% templatetag closeblock %}    
             </span>
         </div>
+        {% templatetag openblock %} endif {% templatetag closeblock %}
         
         <!-- jquery -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         
-        <script>window.jQuery || document.write('<script src="{% templatetag openblock %} static "js/vendor/jquery-1.11.0.min.js" {% templatetag closeblock %}"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="{% templatetag openblock %} static "vendor/js/jquery-1.11.0.min.js" {% templatetag closeblock %}"><\/script>')</script>
                 
         <!-- javascript -->
         {% templatetag openblock %} compress js {% templatetag closeblock %}
-            <!-- angularjs for js apps -->
-            <!--<script src="{% templatetag openblock %} static "js/vendor/angular-1.2.13.min.js" {% templatetag closeblock %}"></script>
-            <script src="{% templatetag openblock %} static "js/vendor/angular-resource-1.2.13.min.js" {% templatetag closeblock %}"></script>-->
-            <script src="{% templatetag openblock %} static "js/vendor/bootstrap-3.1.1.min.js" {% templatetag closeblock %}"></script>
-            <script src="{% templatetag openblock %} static "js/vendor/holder-2.3.1.min.js" {% templatetag closeblock %}"></script>
-            <script src="{% templatetag openblock %} static "js/main.js" {% templatetag closeblock %}"></script>
+            <script src="{% templatetag openblock %} static "vendor/js/bootstrap-3.1.1.min.js" {% templatetag closeblock %}"></script>
+            <script src="{% templatetag openblock %} static "vendor/js/holder-2.3.1.min.js" {% templatetag closeblock %}"></script>
+            <script src="{% templatetag openblock %} static "project/js/main.js" {% templatetag closeblock %}"></script>
         {% templatetag openblock %} endcompress {% templatetag closeblock %}
         
         {% templatetag openblock %} block extra_js {% templatetag closeblock %}{% templatetag openblock %} endblock {% templatetag closeblock %}
