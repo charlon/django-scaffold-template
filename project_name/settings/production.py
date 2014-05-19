@@ -10,3 +10,4 @@ STATIC_ROOT = None
 
 COMPRESS_OFFLINE = True
 COMPRESS_ENABLED = True
+COMPRESS_PRECOMPILERS = (('text/less', 'lessc {infile} {outfile}'),)

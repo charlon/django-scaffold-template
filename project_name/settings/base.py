@@ -16,16 +16,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ni9kzpv*6cit_-mb#1-1g3diy8j!!actv!(6h!=vi8d(wufui^'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -37,9 +30,10 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    # 'app_name',
     'compressor',
     'templatetag_handlebars',
+    
+    # add your apps below...
 )
 
 MIDDLEWARE_CLASSES = (
@@ -96,11 +90,6 @@ STATICFILES_FINDERS = (
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
-
-# django compressor and less-c compiler
-
-COMPRESS_PRECOMPILERS = (('text/less', 'lessc {infile} {outfile}'),)
 
 # django mobileesp
 
