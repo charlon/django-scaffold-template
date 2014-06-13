@@ -10,6 +10,9 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta http-equiv="cleartype" content="on">
         
+        {% templatetag openblock %} load staticfiles {% templatetag closeblock %}
+        {% templatetag openblock %} load compress {% templatetag closeblock %}
+        
         <!-- favicon and mobile device icons-->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% templatetag openblock %} static "vendor/ico/apple-touch-icon-144x144-precomposed.png" {% templatetag closeblock %}">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% templatetag openblock %} static "vendor/ico/apple-touch-icon-114x114-precomposed.png" {% templatetag closeblock %}">
@@ -30,8 +33,6 @@
         -->
     
         <!-- add google/web fonts if needed -->
-        
-        {% templatetag openblock %} load compress {% templatetag closeblock %}
         
         <!-- normalize or bootstrap and mobile-first styles -->
         {% templatetag openblock %} compress css {% templatetag closeblock %}
