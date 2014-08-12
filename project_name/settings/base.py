@@ -31,6 +31,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     
     'compressor',
+    'turbolinks',
     'templatetag_handlebars',
     
     # add your apps below...
@@ -44,6 +45,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     
+    'turbolinks.middleware.TurbolinksMiddleware'
     'django_mobileesp.middleware.UserAgentDetectionMiddleware',
 )
 
