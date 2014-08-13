@@ -14,7 +14,7 @@ This README documents whatever steps are necessary to get your application up an
 
 **Clone repository:**
     
-    $ git clone git@bitbucket.org:charlonpalacay/chunky.git
+    $ git clone [[ repo_location ]] {{ project_name }}.git
 
 **Install dependencies:**
 
@@ -23,7 +23,7 @@ This README documents whatever steps are necessary to get your application up an
 
 **Set environment variable for local settings into terminal:**
 
-    $ export DJANGO_SETTINGS_MODULE=chunky.settings.local
+    $ export DJANGO_SETTINGS_MODULE={{ project_name }}.settings.local
 
 **Run server:**
 
