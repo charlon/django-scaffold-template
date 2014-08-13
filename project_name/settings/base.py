@@ -45,7 +45,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     
-    'turbolinks.middleware.TurbolinksMiddleware'
+    'turbolinks.middleware.TurbolinksMiddleware',
     'django_mobileesp.middleware.UserAgentDetectionMiddleware',
 )
 
