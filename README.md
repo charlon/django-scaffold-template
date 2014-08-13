@@ -25,6 +25,10 @@ This README documents whatever steps are necessary to get your application up an
 
     $ export DJANGO_SETTINGS_MODULE={{ project_name }}.settings.local
 
+**Update local.py settings**
+
+    SECRET_KEY = ''
+    
 **Run server:**
 
     $ python manage.py runserver 0.0.0.0:8000
