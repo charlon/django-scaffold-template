@@ -95,7 +95,7 @@ STATICFILES_DIRS = (
 
 # django mobileesp
 
-from django_mobileesp.detector import agent
+from django_mobileesp.detector import mobileesp_agent as agent
 
 DETECT_USER_AGENTS = {
     'is_tablet' : agent.detectTierTablet,
@@ -117,5 +117,5 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'templates')
+    os.path.join(BASE_DIR, 'templates'),
 )
