@@ -5,8 +5,12 @@ This README documents whatever steps are necessary to get your application up an
 
 **Create your virtual environment**
     
-    $ virtualenv [env-name]
-    $ cd env-name
+    $ virtualenv projectnameenv
+    $ cd projectnameenv
+
+**Install Node**
+
+    Note: varies per platform
 
 **Install Less**
 
@@ -14,16 +18,20 @@ This README documents whatever steps are necessary to get your application up an
 
 **Clone repository:**
     
-    $ git clone [[ repo_location ]] project_name.git
+    $ git clone [[ repo_location ]] projectname.git
 
 **Install dependencies:**
 
-    $ cd chunky
+    $ cd projectname
     $ pip install -r requirements.txt
 
+**Create local.py**
+    
+    $ cp projectname/settings/local_example.py projectname/settings/local.py
+    
 **Set environment variable for local settings into terminal:**
 
-    $ export DJANGO_SETTINGS_MODULE=project_name.settings.local
+    $ export DJANGO_SETTINGS_MODULE=projectname.settings.local
 
 **Update local.py settings**
 
