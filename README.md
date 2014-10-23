@@ -8,8 +8,9 @@ This README documents whatever steps are necessary to get your application up an
     $ virtualenv projectenv
     $ cd projectenv
     
-**Activate your virtualenv**
-    
+**Activating your virtualenv**
+aasjdfasdf
+
     $ source bin/activate
 
 **Install Node**
