@@ -9,6 +9,7 @@ This README documents whatever steps are necessary to get your application up an
     $ cd projectenv
     
 **Activating your virtualenv**
+
 aasjdfasdf
 
     $ source bin/activate
