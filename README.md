@@ -5,8 +5,8 @@ This README documents whatever steps are necessary to get your application up an
 
 **Create your virtual environment**
     
-    $ virtualenv projectnameenv
-    $ cd projectnameenv
+    $ virtualenv projectenv
+    $ cd projectenv
 
 **Install Node**
 
