@@ -7,6 +7,10 @@ This README documents whatever steps are necessary to get your application up an
     
     $ virtualenv projectenv
     $ cd projectenv
+    
+**Activate your virtualenv**
+    
+    $ source bin/activate
 
 **Install Node**
 
@@ -36,6 +40,7 @@ This README documents whatever steps are necessary to get your application up an
 **Update local.py settings**
 
     SECRET_KEY = ''
+
     
 **Run server:**
 
