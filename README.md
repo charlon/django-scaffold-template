@@ -10,7 +10,7 @@ This README documents whatever steps are necessary to get your application up an
     
 **Activating your virtualenv**
 
-aasjdfasdf
+You must activate your virtualenv every time you work on your project.
 
     $ source bin/activate
 
