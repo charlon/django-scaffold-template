@@ -46,7 +46,8 @@ This README documents whatever steps are necessary to get your application up an
     
     $ (projectenv) python manage.py runserver 0.0.0.0:8000
     
-    You should see the Django.. It worked! message when viewing http://localhost:8000
+    
+**It worked!** You should see the Django server running when viewing http://localhost:8000
 
 
 ## Working ##
