@@ -38,7 +38,7 @@ This README documents whatever steps are necessary to get your application up an
 
 **Update local.py settings**
 
-    Follow the URL and generate a secret key for your project
+Generate a secret key for your project using the URL provided
 
     SECRET_KEY = ''
 
