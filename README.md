@@ -28,12 +28,6 @@ This README documents whatever steps are necessary to get your application up an
     $ (projectenv) cd [projectname]
     $ (projectenv) pip install -r requirements.txt
 
-**Update base.py settings**
-
-    Add "projectname" to the list of installed apps
-
-    INSTALLED_APPS = ''
-
 **Create local.py**
     
     $ (projectenv) cp projectname/settings/local_example.py projectname/settings/local.py
