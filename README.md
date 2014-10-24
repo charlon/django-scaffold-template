@@ -1,22 +1,19 @@
-Your Project Name
-=================
+Projectname
+===========
 
 This README documents whatever steps are necessary to get your application up and running.
 
-**Create your virtual environment**
-    
-    $ virtualenv projectenv
-    $ cd projectenv
-    
-**Activating your virtualenv**
+## Install ##
 
-You must activate your virtualenv every time you work on your project.
-
+**Create and activate your virtual environment**
+    
+    $ virtualenv [projectenv]
+    $ cd [projectenv]
     $ source bin/activate
 
 **Install Node**
 
-    Note: varies per platform
+    This process varies per platform.
 
 **Install Less**
 
@@ -24,26 +21,48 @@ You must activate your virtualenv every time you work on your project.
 
 **Clone repository:**
     
-    $ git clone [[ repo_location ]] projectname.git
+    $ (projectenv) git clone [repository_location]/projectname.git
 
 **Install dependencies:**
 
-    $ cd projectname
-    $ pip install -r requirements.txt
+    $ (projectenv) cd [projectname]
+    $ (projectenv) pip install -r requirements.txt
+
+**Update base.py settings**
+
+    Add "projectname" to the list of installed apps
+
+    INSTALLED_APPS = ''
 
 **Create local.py**
     
-    $ cp projectname/settings/local_example.py projectname/settings/local.py
-    
+    $ (projectenv) cp projectname/settings/local_example.py projectname/settings/local.py
+
 **Set environment variable for local settings into terminal:**
 
-    $ export DJANGO_SETTINGS_MODULE=projectname.settings.local
+    $ (projectenv) export DJANGO_SETTINGS_MODULE=projectname.settings.local
 
 **Update local.py settings**
 
+    Follow the URL and generate a secret key for your project
+
     SECRET_KEY = ''
 
+**Test your server:**
+    
+    $ (projectenv) python manage.py runserver 0.0.0.0:8000
+    
+    You should see the Django.. It worked! message when viewing http://localhost:8000
+
+
+## Working ##
+
+**Activate your virtualenv:**
+    
+    $ cd projectenv
+    $ source bin/activate
     
 **Run server:**
-
-    $ python manage.py runserver 0.0.0.0:8000
+    
+    $ cd projectname
+    $ (projectenv) python manage.py runserver 0.0.0.0:8000
