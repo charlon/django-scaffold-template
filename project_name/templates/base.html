@@ -31,8 +31,46 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="apple-mobile-web-app-title" content="">
         -->
-    
-        <!-- add google/web fonts if needed -->
+        <!-- critical css -->
+        {% templatetag openblock %} compress css inline {% templatetag closeblock %}
+        <style rel="stylesheet" type="text/less">
+            <!-- above the fold css here -->
+        </style>
+        {% templatetag openblock %} endcompress {% templatetag closeblock %}
+        
+    </head>
+    <body>
+       
+       <div id="header"> 
+            <p>welcome...</p>
+       </div>
+                
+        <!-- add your site or application content here -->
+        <div id="content">
+            {% templatetag openblock %} block content {% templatetag closeblock %}{% templatetag openblock %} endblock {% templatetag closeblock %}
+        </div>            
+            
+        <div id="footer">
+            <!-- example of request.is_mobile and request.is_tablet usage in templates -->    
+            {% templatetag openblock %} if request.is_mobile {% templatetag closeblock %}
+            <p class="text-muted credit">Courtesy of <a href="">Charlon</a> and <a href="">Craig</a>. UW-IT ACA</p>
+            {% templatetag openblock %} else {% templatetag closeblock %}
+            <p class="text-muted credit">Courtesy of <a href="">Charlon Palacay</a> and <a href="">Craig Stimmel</a>. UW-IT ACA</p>
+            {% templatetag openblock %} endif {% templatetag closeblock %}
+        </div>
+        
+        {% templatetag openblock %} if debug {% templatetag closeblock %}
+        <!-- device bar (debug only) -->
+        <div id="dev_device">
+            <span class="label label-device">
+            {% templatetag openblock %} if request.is_mobile {% templatetag closeblock %}Mobile{% templatetag openblock %} elif request.is_tablet {% templatetag closeblock %}Tablet{% templatetag openblock %} else {% templatetag closeblock %}Desktop{% templatetag openblock %}endif {% templatetag closeblock %}    
+            </span>
+        </div>
+        
+        <div id="dev_viewport">
+            <span class="label label-fold">The fold</span>
+        </div>
+        {% templatetag openblock %} endif {% templatetag closeblock %}
         
         <!-- normalize or bootstrap and mobile-first styles -->
         {% templatetag openblock %} compress css {% templatetag closeblock %}
@@ -65,38 +103,7 @@
         <script src="{% templatetag openblock %} static "vendor/js/turbolinks.js" {% templatetag closeblock %}"></script>
         <script src="{% templatetag openblock %} static "project/js/main.js" {% templatetag closeblock %}"></script>
         {% templatetag openblock %} endcompress {% templatetag closeblock %}
-
-    </head>
-    <body>
-       
-       <div id="header"> 
-            <p>welcome...</p>
-       </div>
-                
-        <!-- add your site or application content here -->
-        <div id="content">
-            {% templatetag openblock %} block content {% templatetag closeblock %}{% templatetag openblock %} endblock {% templatetag closeblock %}
-        </div>            
-            
-        <div id="footer">
-            <!-- example of request.is_mobile and request.is_tablet usage in templates -->    
-            {% templatetag openblock %} if request.is_mobile {% templatetag closeblock %}
-            <p class="text-muted credit">Courtesy of <a href="">Charlon</a> and <a href="">Craig</a>. UW-IT ACA</p>
-            {% templatetag openblock %} else {% templatetag closeblock %}
-            <p class="text-muted credit">Courtesy of <a href="">Charlon Palacay</a> and <a href="">Craig Stimmel</a>. UW-IT ACA</p>
-            {% templatetag openblock %} endif {% templatetag closeblock %}
-        </div>
         
-        {% templatetag openblock %} if debug {% templatetag closeblock %}
-        <!-- device bar (debug only) -->
-        <div id="developer">
-            <span class="label label-danger">
-            {% templatetag openblock %} if request.is_mobile {% templatetag closeblock %}Mobile{% templatetag openblock %} elif request.is_tablet {% templatetag closeblock %}Tablet{% templatetag openblock %} else {% templatetag closeblock %}Desktop{% templatetag openblock %}endif {% templatetag closeblock %}    
-            </span>
-        </div>
-        {% templatetag openblock %} endif {% templatetag closeblock %}
-        
-                        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!--
         <script>
