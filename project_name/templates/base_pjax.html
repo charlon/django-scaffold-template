@@ -1,3 +1,5 @@
-<title>{% block title %}{% endblock %}</title>
+<title>{% templatetag openblock %} block title {% templatetag closeblock %}{% templatetag openblock %}endblock {% templatetag closeblock %}</title>
 
-{% block content %}{% endblock %}
+{% templatetag openblock %} block content {% templatetag closeblock %}
+
+{% templatetag openblock %} endblock {% templatetag closeblock %}

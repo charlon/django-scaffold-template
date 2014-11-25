@@ -1,8 +1,8 @@
-{% extends "base.html, base-pjax.html"|pjax:request %}
+{% templatetag openblock %} extends "base.html, base-pjax.html"|pjax:request {% templatetag closeblock %}
 
-{% block title %}PJAX Example{% endblock %}
+{% templatetag openblock %} block title %}PJAX Example{% endblock {% templatetag closeblock %}
 
-{% block content %}
+{% templatetag openblock %} block content {% templatetag closeblock %}
 
 <h3>PJAX Example</h3>
 
@@ -13,4 +13,4 @@
 <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 
 
-{% endblock %}
+{% templatetag openblock %} endblock {% templatetag closeblock %}
