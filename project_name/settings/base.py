@@ -25,6 +25,7 @@ INSTALLED_APPS = (
     'compressor',
     'easy_pjax',
     'templatetag_handlebars',
+    'project_name',
     
     # add your apps below...
 )
