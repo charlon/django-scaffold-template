@@ -34,7 +34,7 @@
         <!-- critical css -->
         {% templatetag openblock %} compress css inline {% templatetag closeblock %}
         <style rel="stylesheet" type="text/less">
-            <!-- above the fold css here -->
+            body { background: lighten(aqua, 48%) !important; }
         </style>
         {% templatetag openblock %} endcompress {% templatetag closeblock %}
         
@@ -43,6 +43,10 @@
        
        <div id="header"> 
             <p>welcome...</p>
+            <ul>
+                <li><a href="/">Example Page</a></li>
+                <li><a href="/test">Text Page</a></li>
+            </ul>
        </div>
                 
         <!-- add your site or application content here -->
