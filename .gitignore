@@ -50,8 +50,10 @@ coverage.xml
 *.log
 *.pot
 *.pyc
+.DS_Store
 
 # Django settings
+local_settings.py
 local.py
 production.py
 
