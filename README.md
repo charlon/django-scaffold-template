@@ -1,4 +1,4 @@
-Projectname
+{{projectname}}
 ===========
 
 This README documents whatever steps are necessary to get your application up and running.
