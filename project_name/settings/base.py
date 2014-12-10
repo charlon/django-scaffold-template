@@ -106,8 +106,21 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
+    
+    # trestle context processors
+    '{{ project_name }}.context_processors.less_compiled',
+    '{{ project_name }}.context_processors.google_analytics',
+    '{{ project_name }}.context_processors.devtools_bar',
+    '{{ project_name }}.context_processors.low_fidelity',
 )
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
 )
+
+# import local settings
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
