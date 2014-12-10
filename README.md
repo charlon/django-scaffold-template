@@ -28,15 +28,11 @@ This README documents whatever steps are necessary to get your application up an
     $ (projectenv) cd [projectname]
     $ (projectenv) pip install -r requirements.txt
 
-**Create local.py**
+**Create local_settings.py**
     
-    $ (projectenv) cp projectname/settings/local_example.py projectname/settings/local.py
+    $ (projectenv) cp projectname/local_example.py projectname/local_settings.py
 
-**Set environment variable for local settings into terminal:**
-
-    $ (projectenv) export DJANGO_SETTINGS_MODULE=projectname.settings.local
-
-**Update local.py settings**
+**Update local_settings.py settings**
 
 Generate a secret key for your project using the URL provided
 
