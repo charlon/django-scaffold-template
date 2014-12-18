@@ -1,7 +1,5 @@
 # dev settings
 
-from {{ project_name }}.settings.base import *
-
 # SECRET KEY: generate a secret key to use with the application
 # http://www.miniwebtool.com/django-secret-key-generator/
 
